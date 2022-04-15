@@ -1,0 +1,61 @@
+1.Create a new local repository:
+	git init
+
+2.Tell Git who you are:
+	git config --global user.name "name"
+	git config --global user.email "name@example.com"
+
+3.Check out a repository:
+	git clone /path/to/repository
+	git clone username@host:/path/to/repository
+
+4.Add files:
+	git add <filename>
+	git add *
+
+5.Commit:
+	git commit -m "Commit message"	// Commit changes to head (but not yet to the remote repository)
+	git commit -a	// Commit any files you've added with git add, and also commit any files you've changed since then
+	
+6.Push
+	git push origin master		// Send changes to the master branch of your remote repository
+
+7.Status:
+	git status		// List the files you've changed and those you still need to add or commit
+
+8.Connect to a remote repository:
+	git remote add origin <server>
+	git remote -v
+
+9.Branches:
+	git checkout -b <branchname>
+	git checkout <branchname>
+	git branch
+	git branch -d <branchname>
+	git push origin <branchname>
+	git push --all origin
+	git push origin :<branchname>
+
+10.Update from the remote repository:
+	git pull
+	git merge <branchname>
+	git diff
+	git diff --base <filename>
+	git diff <sourcebranch> <targetbranch>
+	git add <filename>
+
+11.Tags:
+	git tag 1.0.0 <commitID>
+	git log
+	git push --tags origin
+
+12.Undo local changes:
+	git checkout -- <filename>
+	git fetch origin
+	git reset --hard origin/master
+
+13.Search:
+	git grep "foo()"
+
+Detail: https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+	
